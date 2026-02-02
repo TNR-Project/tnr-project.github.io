@@ -3,335 +3,216 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tiffany Roché</title>
-  <meta name="robots" content="index,follow" />
+  <title>Tiffany R</title>
   <style>
     :root{
-      --bg:#0b1a2a;
-      --panel: rgba(255,255,255,.08);
-      --panel2: rgba(255,255,255,.12);
-      --text:#eef4ff;
-      --muted: rgba(238,244,255,.75);
-      --line: rgba(255,255,255,.14);
-      --radius: 18px;
-      --shadow: 0 18px 50px rgba(0,0,0,.45);
-      --max: 980px;
+      --bg:#0b1b3a;
+      --card: rgba(255,255,255,.92);
+      --text:#0e1525;
+      --muted:#4a5568;
+      --line: rgba(14,21,37,.12);
+      --radius:18px;
     }
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
       color:var(--text);
-      background: radial-gradient(1200px 700px at 20% 0%, rgba(0,180,255,.18), transparent 55%),
-                  radial-gradient(900px 600px at 80% 10%, rgba(255,120,0,.18), transparent 60%),
-                  radial-gradient(900px 700px at 50% 100%, rgba(255,0,120,.12), transparent 60%),
-                  var(--bg);
-      line-height:1.35;
+      background: radial-gradient(1200px 600px at 20% 0%, #173a7a 0%, var(--bg) 55%, #071126 100%);
     }
-    a{color:var(--text); text-decoration:none; border-bottom:1px solid rgba(255,255,255,.3)}
-    a:hover{border-bottom-color:rgba(255,255,255,.75)}
-    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
-    .banner{
-      border-radius: 22px;
+    .wrap{max-width:980px;margin:0 auto;padding:22px 16px 60px}
+    .hero{
+      border-radius:22px;
       overflow:hidden;
-      box-shadow:var(--shadow);
-      background: #081422;
-      border:1px solid var(--line);
+      background:#0a1a35;
+      box-shadow: 0 18px 60px rgba(0,0,0,.28);
     }
-    .banner img{display:block; width:100%; height:auto}
-    .card{
-      margin-top:16px;
-      padding:18px 18px;
-      border-radius: var(--radius);
-      background: var(--panel);
-      border:1px solid var(--line);
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    .banner{
+      height:170px;
+      background-image:url("assets/banner.png");
+      background-size:cover;
+      background-position:center;
     }
-    .top{
+    .head{
       display:flex;
-      gap:16px;
+      gap:18px;
       align-items:center;
-      flex-wrap:wrap;
+      padding:18px 18px 20px;
+      background: linear-gradient(180deg, rgba(255,255,255,.92) 0%, rgba(255,255,255,.86) 100%);
     }
     .avatar{
-      width:84px; height:84px;
-      border-radius: 999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.06);
-      display:grid; place-items:center;
+      width:92px;height:92px;border-radius:999px;
+      background:#fff;
+      border:6px solid #fff;
       overflow:hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,.18);
       flex:0 0 auto;
     }
-    .avatar img{width:100%; height:100%; object-fit:cover}
-    h1{margin:0; font-size:26px; letter-spacing:.2px}
-    .headline{margin-top:6px; color:var(--muted); font-size:14.5px}
-    .links{
-      margin-left:auto;
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:26px;letter-spacing:.2px}
+    .sub{margin-top:4px;color:var(--muted);font-size:14.5px;line-height:1.35}
+    .links{margin-top:10px;display:flex;flex-wrap:wrap;gap:10px}
     .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:10px 12px;
-      border-radius: 999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.06);
-      box-shadow: 0 10px 22px rgba(0,0,0,.18);
-      font-weight:600;
-      font-size:14px;
-      white-space:nowrap;
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 12px;border-radius:999px;
+      background: rgba(14,21,37,.06);
+      border:1px solid rgba(14,21,37,.10);
+      color:#0e1525;text-decoration:none;font-size:13.5px;
     }
-    .pill span{opacity:.85; font-weight:700}
-    .grid{
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:16px}
+    @media (min-width:880px){ .grid{grid-template-columns: 1.15fr .85fr} }
+    .card{
+      background:var(--card);
+      border:1px solid rgba(255,255,255,.25);
+      border-radius: var(--radius);
+      padding:16px 16px 14px;
+      box-shadow: 0 14px 38px rgba(0,0,0,.18);
+    }
+    h2{margin:0 0 10px;font-size:16px;letter-spacing:.25px}
+    .item{padding:12px 0;border-top:1px solid var(--line)}
+    .item:first-of-type{border-top:0;padding-top:0}
+    .role{font-weight:700}
+    .org{color:var(--muted);margin-top:2px;font-size:13.5px}
+    ul{margin:10px 0 0 18px}
+    li{margin:6px 0;line-height:1.35}
+    .skillgrid{
       display:grid;
-      gap:14px;
+      grid-template-columns: 1fr;
+      gap:10px;
     }
-    @media (min-width: 860px){
-      .grid{grid-template-columns: 1.25fr .75fr}
-    }
-    h2{
-      margin:0 0 10px 0;
-      font-size:16px;
-      letter-spacing:.25px;
-      text-transform:uppercase;
-      color: rgba(238,244,255,.88);
-    }
-    .item{
-      padding:12px 12px;
-      border-radius: 14px;
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-    }
-    .item + .item{margin-top:10px}
-    .role{font-weight:800}
-    .meta{color:var(--muted); font-size:13.5px; margin-top:4px}
-    ul{margin:10px 0 0 18px; padding:0}
-    li{margin:6px 0; color: rgba(238,244,255,.90)}
-    .tagset{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    @media (min-width:700px){ .skillgrid{grid-template-columns: 1fr 1fr} }
+    .taglist{display:flex;flex-wrap:wrap;gap:8px}
     .tag{
+      padding:7px 10px;border-radius:999px;
+      background: rgba(14,21,37,.06);
+      border:1px solid rgba(14,21,37,.10);
       font-size:13px;
-      padding:7px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      color: rgba(238,244,255,.92);
-      white-space:nowrap;
     }
-    .twoColTags{
-      display:grid; gap:8px;
-    }
-    @media (min-width: 700px){
-      .twoColTags{grid-template-columns: 1fr 1fr}
-    }
-    .foot{
-      margin-top:14px;
-      color: rgba(238,244,255,.62);
-      font-size: 12.5px;
-    }
+    .foot{margin-top:16px;color:rgba(255,255,255,.70);font-size:12.5px;text-align:center}
   </style>
 </head>
 
 <body>
   <div class="wrap">
-
-    <!-- Optional: upload your banner + avatar into /assets and update paths -->
-    <div class="banner">
-      <img src="assets/banner.png" alt="" />
-    </div>
-
-    <div class="card">
-      <div class="top">
-        <div class="avatar" aria-hidden="true">
-          <img src="assets/tnr.png" alt="" />
-        </div>
-
+    <section class="hero">
+      <div class="banner"></div>
+      <div class="head">
+        <div class="avatar"><img src="assets/tnr.png" alt="TNR avatar"></div>
         <div>
-          <h1>Tiffany Roché</h1>
-          <div class="headline">Emerging Project Management &amp; Cybersecurity Professional | Creative + Strategic</div>
-        </div>
-
-        <div class="links">
-          <a class="pill" href="https://www.linkedin.com/in/tiffanyroche" target="_blank" rel="noopener">
-            <span>in</span> LinkedIn
-          </a>
-          <a class="pill" href="https://app.joinhandshake.com/profiles/tnroche" target="_blank" rel="noopener">
-            <span>H</span> Handshake
-          </a>
+          <h1>Tiffany R</h1>
+          <div class="sub">Emerging Project Management & Cybersecurity Professional | Creative + Strategic</div>
+          <div class="links">
+            <a class="pill" href="https://www.linkedin.com/in/tiffanyroche" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="pill" href="https://app.joinhandshake.com/profiles/tnroche" target="_blank" rel="noopener">Handshake</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="grid">
-
-      <div class="card">
+      <section class="card">
         <h2>Experience</h2>
 
         <div class="item">
-          <div class="role">Cybersecurity &amp; Project Support Intern, Carolina Cyber Center</div>
-          <div class="meta">Jan 2026 – Present · Remote (Raleigh–Durham–Chapel Hill Area)</div>
+          <div class="role">Cybersecurity & Project Support Intern</div>
+          <div class="org">Carolina Cyber Center | Remote</div>
           <ul>
-            <li>Support cybersecurity initiatives through structured project coordination and security-focused research.</li>
-            <li>Stakeholder communication, tracking, and follow-through across a distributed team environment.</li>
+            <li>Support cybersecurity initiatives through structured project coordination, stakeholder communication, and process follow-through.</li>
+            <li>Contribute to documentation and operational support as work products are defined within the program.</li>
           </ul>
         </div>
 
         <div class="item">
-          <div class="role">Digital Designer &amp; Web Developer, Freelance / Self-employed</div>
-          <div class="meta">2017 – Present · Remote (Raleigh–Durham–Chapel Hill Area)</div>
+          <div class="role">Marketing & E-commerce Manager</div>
+          <div class="org">Triangle Wine Company | Raleigh-Durham-Chapel Hill Area</div>
           <ul>
-            <li>Visual branding and digital assets for small businesses and online retail.</li>
-            <li>Web and CMS support, site updates, and e-commerce optimization.</li>
+            <li>Led end-to-end e-commerce operations and ongoing site optimization.</li>
+            <li>Owned SEO and analytics-driven content improvements; coordinated promotions and campaigns.</li>
+            <li>Created brand-aligned digital assets and maintained consistency across channels.</li>
           </ul>
         </div>
 
         <div class="item">
-          <div class="role">Marketing &amp; E-commerce Manager, Triangle Wine Company</div>
-          <div class="meta">Oct 2011 – Feb 2024 · Raleigh–Durham–Chapel Hill Area</div>
+          <div class="role">Earlier experience</div>
           <ul>
-            <li>Led e-commerce platform operations and digital marketing execution.</li>
-            <li>SEO, analytics, and content optimization; consistent brand execution across channels.</li>
+            <li><b>News Assistant</b>, USA TODAY: Assisted reporters, editors, and bureau leadership; performed research; created/developed graphics for articles.</li>
+            <li><b>Congressional Intern</b>, U.S. House of Representatives: Performed legislative research; conducted tours; prepared constituent correspondence; assisted press secretary with media response and congressional webpage.</li>
+            <li><b>Administrative Assistant</b>, BDO: Processed tax returns; prepared contracts, financial statements, and proposals for a non-profit tax department.</li>
+            <li><b>Data Clerk</b>, Electronic Data Systems: Processed NC Medicaid claims; audited/reconciled data; performed data entry.</li>
           </ul>
         </div>
+      </section>
 
-        <div class="item">
-          <div class="role">Earlier experience (selected)</div>
-          <ul>
-            <li>USA Today (Washington, DC bureau)</li>
-            <li>Internship with U.S. Congressman Rodney Alexander</li>
-            <li>BDO Seidman (accounting firm)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
+      <aside class="card">
         <h2>Education</h2>
-
         <div class="item">
           <div class="role">Meredith College</div>
-          <div class="meta">B.A., Economics · 2008–2011 · GPA 3.9</div>
+          <div class="org">B.A. Economics</div>
         </div>
-
         <div class="item">
           <div class="role">Wake Technical Community College</div>
-          <div class="meta">Cybersecurity / Information Technology · 2024 · GPA 4.0</div>
+          <div class="org">Cybersecurity / Information Technology</div>
         </div>
 
-        <div style="height:12px"></div>
-
-        <h2>Licenses &amp; Certifications (selected)</h2>
+        <h2 style="margin-top:14px;">Certifications</h2>
         <div class="item">
           <ul>
             <li>CCNA: Introduction to Networks (Cisco)</li>
-            <li>IT Foundations Certificate (Wake Technical Community College)</li>
-            <li>Career Essentials in Project Management (Microsoft + LinkedIn)</li>
-            <li>Foundations of Project Management + Agile Project Management (Google)</li>
-            <li>ITIL 4: Intro to Service Management (LinkedIn)</li>
-            <li>DevOps Foundations (LinkedIn)</li>
-            <li>Learning Cyber Incident Response + Digital Forensics (LinkedIn)</li>
+            <li>Career Essentials in Project Management (Microsoft)</li>
+            <li>Project Initiation: Starting a Successful Project (Google)</li>
+            <li>Project Planning: Putting It All Together (Google)</li>
+            <li>Agile Project Management (Google)</li>
+            <li>Foundations of Project Management (Google)</li>
+            <li>Certificate in Finance Essentials (Duke University)</li>
+            <li>Information Technology: IT Foundations Certificate (Wake Technical Community College)</li>
             <li>Notary Public (State of North Carolina)</li>
           </ul>
         </div>
-      </div>
 
+        <h2 style="margin-top:14px;">Skills</h2>
+        <div class="skillgrid">
+          <div class="taglist">
+            <span class="tag">Project Management</span>
+            <span class="tag">Stakeholder Communication</span>
+            <span class="tag">Requirements Management</span>
+            <span class="tag">Risk Assessment</span>
+            <span class="tag">Agile Methodologies</span>
+            <span class="tag">Change Management</span>
+            <span class="tag">Conflict Management</span>
+            <span class="tag">Public Speaking</span>
+          </div>
+          <div class="taglist">
+            <span class="tag">Cybersecurity</span>
+            <span class="tag">Computer Networking</span>
+            <span class="tag">Windows 10</span>
+            <span class="tag">Windows 11</span>
+            <span class="tag">Linux</span>
+            <span class="tag">CLI</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Databases</span>
+            <span class="tag">JSON</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Jira</span>
+            <span class="tag">ITIL</span>
+          </div>
+        </div>
+
+        <h2 style="margin-top:14px;">Additional strengths</h2>
+        <div class="item">
+          <div class="taglist">
+            <span class="tag">Customer Service</span>
+            <span class="tag">Management</span>
+            <span class="tag">Business Analytics</span>
+            <span class="tag">SEO</span>
+            <span class="tag">Web Design</span>
+            <span class="tag">Graphic Design</span>
+          </div>
+        </div>
+      </aside>
     </div>
 
-    <div class="card">
-      <h2>Skills</h2>
-
-      <div class="twoColTags">
-        <div class="item">
-          <div class="role">Project &amp; delivery</div>
-          <div class="tagset">
-            <div class="tag">Project Management</div>
-            <div class="tag">Stakeholder Communication</div>
-            <div class="tag">Project Communications</div>
-            <div class="tag">Project Scheduling</div>
-            <div class="tag">Budget Development</div>
-            <div class="tag">Requirements Management</div>
-            <div class="tag">Agile Methodologies</div>
-            <div class="tag">Change Management</div>
-            <div class="tag">Conflict Management</div>
-            <div class="tag">Management</div>
-            <div class="tag">Public Speaking</div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="role">Cybersecurity &amp; IT</div>
-          <div class="tagset">
-            <div class="tag">Cybersecurity</div>
-            <div class="tag">Computer Networking</div>
-            <div class="tag">Network Administration</div>
-            <div class="tag">Packet Tracer</div>
-            <div class="tag">CLI</div>
-            <div class="tag">Linux</div>
-            <div class="tag">Windows 11</div>
-            <div class="tag">Windows 10</div>
-            <div class="tag">Windows Desktop Administration</div>
-            <div class="tag">IT Service Management</div>
-            <div class="tag">ITIL</div>
-            <div class="tag">Jira</div>
-            <div class="tag">DevOps</div>
-            <div class="tag">Cyber Incident Response</div>
-            <div class="tag">Digital Forensics</div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="role">Programming &amp; data</div>
-          <div class="tagset">
-            <div class="tag">Python</div>
-            <div class="tag">SQL</div>
-            <div class="tag">Databases</div>
-            <div class="tag">HTML</div>
-            <div class="tag">CSS</div>
-            <div class="tag">JavaScript</div>
-            <div class="tag">JSON</div>
-            <div class="tag">Git</div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="role">Digital, marketing, design</div>
-          <div class="tagset">
-            <div class="tag">SEO</div>
-            <div class="tag">Google Analytics</div>
-            <div class="tag">Google Ads</div>
-            <div class="tag">Bing Ads</div>
-            <div class="tag">Email Marketing</div>
-            <div class="tag">Email Newsletter Design</div>
-            <div class="tag">Marketing Strategy</div>
-            <div class="tag">Advertising</div>
-            <div class="tag">Product Marketing</div>
-            <div class="tag">Retail Marketing</div>
-            <div class="tag">Pricing Strategy</div>
-            <div class="tag">Brand Development</div>
-            <div class="tag">Market Research</div>
-            <div class="tag">Web Design</div>
-            <div class="tag">Front-end Development</div>
-            <div class="tag">User Interface Design</div>
-            <div class="tag">User Experience (UX)</div>
-            <div class="tag">Adobe Photoshop</div>
-            <div class="tag">Adobe Illustrator</div>
-            <div class="tag">Adobe InDesign</div>
-            <div class="tag">Adobe Acrobat</div>
-            <div class="tag">Squarespace</div>
-            <div class="tag">Shopify</div>
-            <div class="tag">BigCommerce</div>
-            <div class="tag">Xara Design Pro</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="foot">
-        <!-- Silent proof marker for cache-busting if you ever need it: -->
-        <!-- build: 2026-02-02 -->
-      </div>
-    </div>
-
+    <div class="foot">© Tiffany R</div>
   </div>
 </body>
 </html>
