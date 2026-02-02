@@ -1,1 +1,261 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tiffany Roche | Project Management + Cybersecurity</title>
+  <meta name="description" content="Tiffany Roche - Emerging Project Management & Cybersecurity professional. Digital operations, e-commerce, and technical coordination experience." />
+  <style>
+    :root{
+      --bg:#071a2b;
+      --panel:rgba(255,255,255,.06);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+      --line:rgba(255,255,255,.16);
+      --accent:#7cc6ff;
+      --accent2:#ffb44a;
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 75% 10%, rgba(124,198,255,.20), transparent 60%),
+                  radial-gradient(900px 700px at 20% 30%, rgba(255,180,74,.14), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.45;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:28px 18px 60px}
+    .hero{
+      border-radius: var(--radius);
+      overflow:hidden;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    }
+    .banner{
+      height:150px;
+      background: #0b2a44;
+      background-image: url("banner.png");
+      background-size: cover;
+      background-position: center;
+    }
+    .heroInner{
+      display:flex;
+      gap:18px;
+      padding:18px;
+      align-items:center;
+    }
+    .avatar{
+      width:76px; height:76px;
+      border-radius: 50%;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.08);
+      display:grid; place-items:center;
+      overflow:hidden;
+      flex:0 0 auto;
+    }
+    .avatar img{width:100%; height:100%; object-fit:cover}
+    h1{font-size:26px; margin:0}
+    .tagline{margin:6px 0 0; color:var(--muted)}
+    .pills{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+    .pill{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:14px;
+      margin-top:14px;
+    }
+    @media (max-width: 860px){
+      .grid{grid-template-columns:1fr}
+      .banner{height:130px}
+    }
+    .card{
+      border-radius: var(--radius);
+      border:1px solid var(--line);
+      background: var(--panel);
+      padding:16px;
+    }
+    .card h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:.2px;
+    }
+    .small{color:var(--muted); font-size:13px}
+    ul{margin:10px 0 0 18px; padding:0}
+    li{margin:6px 0}
+    .row{
+      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+      margin-top:10px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:8px;
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      font-size:13px;
+      text-decoration:none;
+    }
+    .btn:hover{background: rgba(255,255,255,.10); text-decoration:none}
+    .divider{height:1px; background:var(--line); margin:14px 0}
+    .kicker{font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.14em}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="banner"></div>
+      <div class="heroInner">
+        <div class="avatar" aria-label="TNR avatar">
+          <!-- Optional: upload your avatar as avatar.png -->
+          <img src="avatar.png" alt="TNR" onerror="this.remove(); this.parentElement.textContent='TNR'; this.parentElement.style.fontWeight='700';" />
+        </div>
+
+        <div>
+          <h1>Tiffany Roche</h1>
+          <p class="tagline">Emerging Project Management & Cybersecurity Professional | Creative + Strategic</p>
+
+          <div class="pills">
+            <span class="pill">Project coordination</span>
+            <span class="pill">Stakeholder communication</span>
+            <span class="pill">Technical documentation</span>
+            <span class="pill">Digital operations</span>
+            <span class="pill">E-commerce + UX</span>
+          </div>
+
+          <div class="row" aria-label="Primary links">
+            <a class="btn" href="https://www.linkedin.com/in/tiffanyroche" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://app.joinhandshake.com/profiles/tnroche" target="_blank" rel="noopener">Handshake (employers)</a>
+            <a class="btn" href="https://github.com/TNR-Project/tnr-project.github.io" target="_blank" rel="noopener">Site repo</a>
+          </div>
+
+          <p class="small" style="margin-top:10px;">
+            Contact: Please message me via LinkedIn. Handshake is available for verified employers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card">
+        <div class="kicker">About</div>
+        <h2>Summary</h2>
+        <p class="small">
+          Organized, creative digital professional with 8+ years of experience in marketing, e-commerce, and web development.
+          Experienced leading cross-functional work, managing digital platforms end-to-end, and producing clear documentation.
+          Currently pursuing cybersecurity studies and expanding into tech-forward project coordination and IT-adjacent roles.
+        </p>
+
+        <div class="divider"></div>
+
+        <h2>Current focus</h2>
+        <ul class="small">
+          <li>Project support, coordination, and documentation in cybersecurity-aligned environments</li>
+          <li>Building a clean professional footprint: GitHub Pages site, consistent branding, and updated portfolio links</li>
+          <li>Continuing structured learning (PM, IT foundations, networking, tooling)</li>
+        </ul>
+      </section>
+
+      <aside class="card">
+        <div class="kicker">Highlights</div>
+        <h2>Core strengths</h2>
+        <ul class="small">
+          <li>Reliable delivery and calm under pressure</li>
+          <li>Clear communication and stakeholder alignment</li>
+          <li>Digital systems thinking (content, analytics, tooling)</li>
+          <li>Practical problem solving</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <h2>Tools and tech</h2>
+        <p class="small">
+          HTML, CSS, JSON, CMS troubleshooting, e-commerce platforms, analytics, technical research, documentation.
+        </p>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:14px;">
+      <div class="kicker">Experience</div>
+      <h2>Recent and relevant</h2>
+
+      <p class="small"><strong>Cybersecurity & Project Support Intern</strong> | Carolina Cyber Center | Jan 2026 to Present | Remote</p>
+      <ul class="small">
+        <li>Support cybersecurity initiatives through structured project coordination, documentation, and research</li>
+        <li>Assist with cross-team communication and organizing work products</li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <p class="small"><strong>Marketing & E-commerce Manager</strong> | Triangle Wine Company | Cary, NC | Mar 2016 to Feb 2024</p>
+      <ul class="small">
+        <li>Led development and management of front-end and back-end e-commerce platforms</li>
+        <li>Oversaw SEO strategy, web analytics, and content optimization</li>
+        <li>Designed and executed local event marketing and promotional campaigns</li>
+        <li>Created digital, in-store, and print advertising assets and maintained brand consistency</li>
+      </ul>
+
+      <p class="small" style="margin-top:12px;"><strong>Marketing & Digital Operations Associate</strong> | Triangle Wine Company | Oct 2011 to Mar 2016</p>
+      <ul class="small">
+        <li>Supported digital marketing, early e-commerce initiatives, and brand development</li>
+      </ul>
+
+      <p class="small" style="margin-top:12px;"><strong>Freelance Digital Designer & Web Developer</strong> | Mar 2017 to Present</p>
+      <ul class="small">
+        <li>Branding, apparel graphics, e-commerce support, digital content for local businesses and online retailers</li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h2>Earlier experience (selected)</h2>
+      <ul class="small">
+        <li><strong>News Assistant</strong> | USA TODAY | Assisted reporters/editors, performed research, and developed graphics</li>
+        <li><strong>Congressional Intern</strong> | U.S. House of Representatives | Legislative research, constituent correspondence, tours, media support</li>
+        <li><strong>Administrative Assistant</strong> | BDO | Processed tax returns, prepared contracts, financial statements, proposals</li>
+        <li><strong>Data Clerk</strong> | Electronic Data Systems (EDS) | Processed NC Medicaid claims, audited and reconciled data</li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-top:14px;">
+      <div class="kicker">Education</div>
+      <h2>Education and training</h2>
+      <ul class="small">
+        <li><strong>Wake Technical Community College</strong> | AAS Information Technology, Cybersecurity | In progress | 4.0 GPA</li>
+        <li><strong>Meredith College</strong> | BA Economics, Minor Business Administration | 2011 | 3.9 GPA</li>
+        <li><strong>Duke University</strong> | Professional Certificate in Finance Essentials | Aug 2024</li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <h2>Certifications and licenses</h2>
+      <ul class="small">
+        <li>Notary Public, State of North Carolina | Apr 2024</li>
+      </ul>
+    </section>
+
+    <p class="small" style="margin:14px 4px 0; color:rgba(255,255,255,.55);">
+      © <span id="y"></span> Tiffany Roche. Built with GitHub Pages.
+    </p>
+
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
