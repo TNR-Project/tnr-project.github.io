@@ -1,0 +1,17 @@
+#Tiffany Roche
+#I love rice
+print("T","T","T","T","T")
+print("","","","", "T", "", "")
+print("","","","", "T", "", "")
+print("","","","", "T", "", "")
+print("","","","", "T", "", "")
+print("","","","", "T", "", "")
+print("","","","", "T", "", "")
+
+print("R", "R", "R", "R")
+print("R", " ", " ", " ", "R")
+print("R", " ", " ", " ", "R")
+print("R", "R", "R")
+print("R", " ","R")
+print("R", " "," ","R")
+print("R", " "," "," ","R")
